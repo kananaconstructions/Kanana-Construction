@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
 
 :root {
-  --brand: #ff5a1f;
-  --ink: #0f172a;
+  --brand: #D4AF7F;
+  --ink: #2D2D2D;
   --muted: #6b7280;
-  --bg: #ffffff;
-  --card: #0b1324;
-  --accent: #e2e8f0;
+  --bg: #F9F7F3;
+  --card: #2D2D2D;
+  --accent: #e8e4dc;
 }
 * {
   box-sizing: border-box;
@@ -55,22 +55,22 @@ img {
   align-items: center;
   gap: 0.5rem;
   background: var(--brand);
-  color: white;
+  color: #2D2D2D;
   border: none;
   border-radius: 0.75rem;
   padding: 0.8rem 1.1rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
-  box-shadow: 0 6px 16px rgba(255, 90, 31, 0.25);
+  box-shadow: 0 6px 16px rgba(212, 175, 127, 0.3);
 }
 .btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(255, 90, 31, 0.35);
-  background: #e54a1a;
+  box-shadow: 0 8px 20px rgba(212, 175, 127, 0.4);
+  background: #c4a070;
 }
 .btn:focus-visible {
-  outline: 3px solid rgba(255, 90, 31, 0.5);
+  outline: 3px solid rgba(212, 175, 127, 0.5);
   outline-offset: 2px;
 }
 .btn:active {
@@ -84,8 +84,8 @@ img {
 }
 .btn.secondary.active {
   background: var(--brand);
-  color: white;
-  box-shadow: 0 4px 12px rgba(255, 90, 31, 0.3);
+  color: #2D2D2D;
+  box-shadow: 0 4px 12px rgba(212, 175, 127, 0.3);
   font-weight: 600;
 }
 .btn.secondary:hover {
@@ -93,15 +93,15 @@ img {
 }
 .btn.secondary.active:hover {
   transform: translateY(-1px);
-  background: #e54a1a;
-  box-shadow: 0 6px 16px rgba(255, 90, 31, 0.4);
+  background: #c4a070;
+  box-shadow: 0 6px 16px rgba(212, 175, 127, 0.4);
 }
 .badge {
   font-size: 0.75rem;
   padding: 0.25rem 0.6rem;
   border-radius: 999px;
-  background: #ffe9e1;
-  color: #a83a12;
+  background: rgba(212, 175, 127, 0.15);
+  color: #8a6d4b;
   display: inline-block;
   font-weight: 600;
 }
@@ -113,10 +113,10 @@ img {
   color: white;
 }
 .section.dark .lead {
-  color: #cbd5e1;
+  color: #e8e4dc;
 }
 .section.alt {
-  background: #f6f7f9;
+  background: #e8e4dc;
 }
 h1,
 h2,
@@ -134,7 +134,7 @@ h3 {
   font-size: 1.2rem;
 }
 .lead {
-  color: var(--muted);
+  color: #4a4a4a;
   max-width: 60ch;
 }
 .grid {
@@ -160,7 +160,7 @@ h3 {
 }
 .card:focus-within {
   border-color: var(--brand);
-  box-shadow: 0 4px 15px rgba(255, 90, 31, 0.15);
+  box-shadow: 0 4px 15px rgba(212, 175, 127, 0.15);
 }
 .card:hover {
   transform: translateY(-4px);
@@ -168,12 +168,12 @@ h3 {
   border-color: var(--brand);
 }
 .card.dark {
-  background: #101a33;
-  border-color: #1f2a44;
+  background: #363636;
+  border-color: #4a4a4a;
   color: white;
 }
 .card.dark:hover {
-  background: #131f3d;
+  background: #404040;
   border-color: var(--brand);
 }
 .card .content {
@@ -202,7 +202,7 @@ h3 {
 
 /* Projects page hero section with background image */
 .projects-hero {
-  background: linear-gradient(rgba(11, 19, 36, 0.85), rgba(11, 19, 36, 0.85)), 
+  background: linear-gradient(rgba(45, 45, 45, 0.9), rgba(45, 45, 45, 0.9)), 
               url('images/projects-background.jpg') center/cover;
   color: white;
   padding: 80px 0;
@@ -217,7 +217,7 @@ h3 {
 }
 
 .projects-hero .kicker {
-  color: #ff5a1f;
+  color: #D4AF7F;
 }
 
 .projects-hero h1 {
@@ -225,15 +225,25 @@ h3 {
 }
 
 .projects-hero .lead {
-  color: #cbd5e1;
+  color: #e8e4dc;
 }
+
+.card.dark .project-meta {
+  color: #b8b0a4;
+}
+
+.card.dark .tag {
+  background: rgba(212, 175, 127, 0.25);
+  color: #D4AF7F;
+}
+
 header {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(249, 247, 243, 0.9);
   backdrop-filter: saturate(180%) blur(8px);
-  border-bottom: 1px solid #eef0f3;
+  border-bottom: 1px solid #e8e4dc;
 }
 .nav {
   display: flex;
@@ -255,7 +265,8 @@ header {
   border-radius: 0.2rem;
 }
 .nav a {
-  color: #334155;
+  color: #2D2D2D;
+  font-weight: 500;
 }
 .nav .links {
   display: flex;
@@ -266,9 +277,25 @@ header {
   padding: 0.45rem 0.65rem;
   border-radius: 0.5rem;
 }
-.nav .links a.active,
+.nav .links a.active {
+  font-weight: 600;
+  position: relative;
+}
+.nav .links a.active::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 0.45rem;
+  right: 0.45rem;
+  height: 2px;
+  background: var(--brand);
+  border-radius: 1px;
+}
 .nav .links a:hover {
   background: #f0f2f6;
+}
+.nav .links a.active:hover {
+  background: transparent;
 }
 .menu-btn {
   display: none;
@@ -388,7 +415,7 @@ header {
 
 /*** Featured Projects strip ***/
 .featured-strip {
-  background: #0f1a30;
+  background: #2D2D2D;
   color: white;
   border-radius: 1rem;
   padding: 1rem;
@@ -406,14 +433,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #64748b;
+  color: #6b6b6b;
   font-size: 0.85rem;
   margin-top: 0.35rem;
 }
 .tag {
   font-size: 0.75rem;
-  background: #eef2ff;
-  color: #3730a3;
+  background: rgba(212, 175, 127, 0.2);
+  color: #6b563d;
   padding: 0.25rem 0.5rem;
   border-radius: 0.5rem;
 }
@@ -436,8 +463,8 @@ header {
   content: counter(step, decimal-leading-zero);
   font-weight: 900;
   color: var(--brand);
-  background: #fff1ec;
-  border: 1px solid #fec7b3;
+  background: rgba(212, 175, 127, 0.15);
+  border: 1px solid rgba(212, 175, 127, 0.3);
   border-radius: 0.6rem;
   padding: 0.25rem 0.5rem;
   margin-top: 0.2rem;
@@ -445,7 +472,7 @@ header {
 
 /*** Footer ***/
 footer {
-  background: #0f172a;
+  background: #2D2D2D;
   color: #e5e7eb;
 }
 footer .grid {
@@ -453,16 +480,16 @@ footer .grid {
   gap: 2rem;
 }
 footer a {
-  color: #cbd5e1;
+  color: #e8e4dc;
 }
 footer a:hover {
   color: var(--brand);
 }
 .subfooter {
-  border-top: 1px solid #1f2937;
+  border-top: 1px solid #4a4a4a;
   margin-top: 1rem;
   padding: 0.5rem 0;
-  color: #94a3b8;
+  color: #b8b0a4;
   font-size: 0.9rem;
   text-align: center;
 }
@@ -486,7 +513,7 @@ footer a:hover {
 .meta strong {
   display: block;
   font-size: 0.8rem;
-  color: #64748b;
+  color: #6b6b6b;
   text-transform: uppercase;
   margin-bottom: 0.4rem;
 }
@@ -501,9 +528,9 @@ footer a:hover {
   border-radius: 0.5rem;
 }
 .badge-box {
-  background: #ffe9e1;
-  color: #7a2e12;
-  border: 1px solid #fec7b3;
+  background: rgba(212, 175, 127, 0.15);
+  color: #6b563d;
+  border: 1px solid rgba(212, 175, 127, 0.3);
   padding: 1rem;
   border-radius: 0.75rem;
 }
@@ -1064,7 +1091,7 @@ hr {
   }
   #mobileMenu a:hover {
     background: var(--brand);
-    color: white;
+    color: #2D2D2D;
     transform: translateX(4px);
   }
   @keyframes slideDown {
